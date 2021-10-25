@@ -13,16 +13,19 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var news: News?
     var articles = [Article]()
     var page = 1
+    var currentFilter = "technology" {
+        didSet {
+            refreshNews()
+        }
+    }
     
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         setup()
         refreshNews()
-        
     }
     
     func setup() {
@@ -50,10 +53,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         if refresh {
             tableView.refreshControl?.beginRefreshing()
-            print("refresh")
         }
         
-        let params = "q=technology&page=\(page)"
+        let params = "q=\(currentFilter)&page=\(page)"
 
         let urlString = API.URL + params + API.key
         guard let url = URL(string: urlString) else { return }
@@ -97,7 +99,27 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     
     @objc func filterTapped() {
-        
+        let ac = UIAlertController(title: "Обрати категорію:", message: nil, preferredStyle: .actionSheet)
+        ac.addAction(UIAlertAction(title: "Бізнес", style: .default, handler: { action in
+            self.currentFilter = "business"
+        }))
+        ac.addAction(UIAlertAction(title: "Технології", style: .default, handler: { action in
+            self.currentFilter = "technology"
+        }))
+        ac.addAction(UIAlertAction(title: "Фінанси", style: .default, handler: { action in
+            self.currentFilter = "finance"
+        }))
+        ac.addAction(UIAlertAction(title: "Політика", style: .default, handler: { action in
+            self.currentFilter = "politics"
+        }))
+        ac.addAction(UIAlertAction(title: "Розваги", style: .default, handler: { action in
+            self.currentFilter = "entertainment"
+        }))
+        ac.addAction(UIAlertAction(title: "Спорт", style: .default, handler: { action in
+            self.currentFilter = "sport"
+        }))
+        ac.addAction(UIAlertAction(title: "Відмінити", style: .cancel))
+        present(ac, animated: true)
     }
     
     

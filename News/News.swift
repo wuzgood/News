@@ -9,7 +9,9 @@ import Foundation
 
 struct API {
     static var URL = "https://newsapi.org/v2/everything?"
-    static var key = "&apiKey=c55c07c0b81c498289123bc110f88a0c"
+    static var key = "&apiKey=47c8a9367bbe40f7b49874df1fcb0f93"
+    // c55c07c0b81c498289123bc110f88a0c
+    // 47c8a9367bbe40f7b49874df1fcb0f93
 }
 
 // MARK: - News
