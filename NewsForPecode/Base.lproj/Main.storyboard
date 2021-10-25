@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nkw-zo-ysW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Пошук-->
+        <scene sceneID="o0y-68-or7">
+            <objects>
+                <navigationController id="YrS-k8-d0z" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Пошук" image="magnifyingglass" catalog="system" id="r55-CN-Anb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cvj-WI-jBA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QdM-ly-37n" kind="relationship" relationship="rootViewController" id="4j2-wt-gsr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Osg-w4-VRm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2783" y="1425"/>
+        </scene>
+        <!--Пошук-->
+        <scene sceneID="GJg-sg-Ed9">
+            <objects>
+                <viewController id="QdM-ly-37n" customClass="SearchViewController" customModule="NewsForPecode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r4J-oX-SeZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pXV-Ap-Em5">
+                                <rect key="frame" x="0.0" y="139" width="414" height="674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iky-TG-7JL">
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Q18-bD-TeH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q18-bD-TeH" firstAttribute="trailing" secondItem="Iky-TG-7JL" secondAttribute="trailing" id="5VJ-m1-qZh"/>
+                            <constraint firstItem="pXV-Ap-Em5" firstAttribute="top" secondItem="Iky-TG-7JL" secondAttribute="bottom" id="Nha-Jx-Qdc"/>
+                            <constraint firstItem="Q18-bD-TeH" firstAttribute="bottom" secondItem="pXV-Ap-Em5" secondAttribute="bottom" id="Wty-gv-HIv"/>
+                            <constraint firstItem="Iky-TG-7JL" firstAttribute="leading" secondItem="r4J-oX-SeZ" secondAttribute="leading" id="jcM-Xh-P6a"/>
+                            <constraint firstItem="Q18-bD-TeH" firstAttribute="trailing" secondItem="pXV-Ap-Em5" secondAttribute="trailing" id="lJb-La-vgv"/>
+                            <constraint firstItem="pXV-Ap-Em5" firstAttribute="leading" secondItem="Q18-bD-TeH" secondAttribute="leading" id="ogU-p9-3YO"/>
+                            <constraint firstItem="Iky-TG-7JL" firstAttribute="top" secondItem="Q18-bD-TeH" secondAttribute="top" id="s5N-xQ-Geb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Пошук" id="frg-4E-wAH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Qo-0O-VYy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3595.652173913044" y="1425"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="NewsForPecode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wg9-S2-Q68">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wg9-S2-Q68" secondAttribute="bottom" id="2b5-jR-toK"/>
+                            <constraint firstItem="wg9-S2-Q68" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9oq-82-BLZ"/>
+                            <constraint firstItem="wg9-S2-Q68" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fO3-UZ-QDb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wg9-S2-Q68" secondAttribute="trailing" id="txm-Jx-xnZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="b9Z-Yt-5lH"/>
+                    <connections>
+                        <outlet property="tableView" destination="wg9-S2-Q68" id="sAx-lY-F4W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3596" y="68"/>
+        </scene>
+        <!--Вподобане-->
+        <scene sceneID="Z6K-DO-c83">
+            <objects>
+                <navigationController id="bBN-DW-HpZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Вподобане" image="star" catalog="system" id="khd-VG-qBf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ENj-ru-Vgj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gco-FN-e8r" kind="relationship" relationship="rootViewController" id="2Nz-e7-1oZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dh0-b3-rgh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2783" y="735"/>
+        </scene>
+        <!--Favourite View Controller-->
+        <scene sceneID="NQA-NM-HG9">
+            <objects>
+                <viewController id="gco-FN-e8r" customClass="FavouriteViewController" customModule="NewsForPecode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K2u-Bg-76D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fw9-jA-LvF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AYq-FS-GeO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AYq-FS-GeO" firstAttribute="bottom" secondItem="fw9-jA-LvF" secondAttribute="bottom" id="Cdm-3f-Wou"/>
+                            <constraint firstItem="fw9-jA-LvF" firstAttribute="top" secondItem="AYq-FS-GeO" secondAttribute="top" id="YqB-3o-NEw"/>
+                            <constraint firstItem="AYq-FS-GeO" firstAttribute="trailing" secondItem="fw9-jA-LvF" secondAttribute="trailing" id="fX4-q8-n0r"/>
+                            <constraint firstItem="fw9-jA-LvF" firstAttribute="leading" secondItem="AYq-FS-GeO" secondAttribute="leading" id="m88-CW-UjP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iov-iX-v4h"/>
+                    <connections>
+                        <outlet property="tableView" destination="fw9-jA-LvF" id="OHW-Rh-7F8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2qw-wd-uDW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3596" y="735"/>
+        </scene>
+        <!--Новини-->
+        <scene sceneID="356-91-Uxa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sPG-LI-NOI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Новини" image="newspaper" catalog="system" id="zbc-Iw-WvT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7mF-o2-Hb3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="r6l-oS-xHc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vL-qs-v4i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2783" y="68"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tn4-aT-R4T">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="nkw-zo-ysW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QiB-Km-Jlo">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="sPG-LI-NOI" kind="relationship" relationship="viewControllers" id="DkI-aB-Md3"/>
+                        <segue destination="bBN-DW-HpZ" kind="relationship" relationship="viewControllers" id="E6u-bS-cI7"/>
+                        <segue destination="YrS-k8-d0z" kind="relationship" relationship="viewControllers" id="tNj-lf-X0b"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y6o-OL-fn3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1529" y="924"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="newspaper" catalog="system" width="128" height="111"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
