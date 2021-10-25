@@ -11,7 +11,7 @@
 		CF09755A2722CA240085618C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0975592722CA240085618C /* SceneDelegate.swift */; };
 		CF09755C2722CA240085618C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09755B2722CA240085618C /* MainViewController.swift */; };
 		CF09755F2722CA240085618C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF09755D2722CA240085618C /* Main.storyboard */; };
-		CF0975622722CA240085618C /* NewsForPecode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF0975602722CA240085618C /* NewsForPecode.xcdatamodeld */; };
+		CF0975622722CA240085618C /* News.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF0975602722CA240085618C /* News.xcdatamodeld */; };
 		CF0975642722CA270085618C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF0975632722CA270085618C /* Assets.xcassets */; };
 		CF0975672722CA270085618C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF0975652722CA270085618C /* LaunchScreen.storyboard */; };
 		CF09756F2722E5A00085618C /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09756E2722E5A00085618C /* News.swift */; };
@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CF0975542722CA240085618C /* NewsForPecode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsForPecode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0975542722CA240085618C /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF0975572722CA240085618C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF0975592722CA240085618C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CF09755B2722CA240085618C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		CF09754B2722CA240085618C = {
 			isa = PBXGroup;
 			children = (
-				CF0975562722CA240085618C /* NewsForPecode */,
+				CF0975562722CA240085618C /* News */,
 				CF0975552722CA240085618C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,12 +64,12 @@
 		CF0975552722CA240085618C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CF0975542722CA240085618C /* NewsForPecode.app */,
+				CF0975542722CA240085618C /* News.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CF0975562722CA240085618C /* NewsForPecode */ = {
+		CF0975562722CA240085618C /* News */ = {
 			isa = PBXGroup;
 			children = (
 				CF09756E2722E5A00085618C /* News.swift */,
@@ -84,9 +84,9 @@
 				CF0975632722CA270085618C /* Assets.xcassets */,
 				CF0975652722CA270085618C /* LaunchScreen.storyboard */,
 				CF0975682722CA270085618C /* Info.plist */,
-				CF0975602722CA240085618C /* NewsForPecode.xcdatamodeld */,
+				CF0975602722CA240085618C /* News.xcdatamodeld */,
 			);
-			path = NewsForPecode;
+			path = News;
 			sourceTree = "<group>";
 		};
 		CF6317C82724623F00AEBD49 /* ArticleTableViewCell */ = {
@@ -110,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CF0975532722CA240085618C /* NewsForPecode */ = {
+		CF0975532722CA240085618C /* News */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CF09756B2722CA270085618C /* Build configuration list for PBXNativeTarget "NewsForPecode" */;
+			buildConfigurationList = CF09756B2722CA270085618C /* Build configuration list for PBXNativeTarget "News" */;
 			buildPhases = (
 				CF0975502722CA240085618C /* Sources */,
 				CF0975512722CA240085618C /* Frameworks */,
@@ -122,9 +122,9 @@
 			);
 			dependencies = (
 			);
-			name = NewsForPecode;
+			name = News;
 			productName = NewsForPecode;
-			productReference = CF0975542722CA240085618C /* NewsForPecode.app */;
+			productReference = CF0975542722CA240085618C /* News.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -142,7 +142,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CF09754F2722CA240085618C /* Build configuration list for PBXProject "NewsForPecode" */;
+			buildConfigurationList = CF09754F2722CA240085618C /* Build configuration list for PBXProject "News" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -155,7 +155,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CF0975532722CA240085618C /* NewsForPecode */,
+				CF0975532722CA240085618C /* News */,
 			);
 		};
 /* End PBXProject section */
@@ -182,7 +182,7 @@
 				CF09755C2722CA240085618C /* MainViewController.swift in Sources */,
 				CF0975582722CA240085618C /* AppDelegate.swift in Sources */,
 				CF8F0BB82724BF2D00D7BCC0 /* SearchViewController.swift in Sources */,
-				CF0975622722CA240085618C /* NewsForPecode.xcdatamodeld in Sources */,
+				CF0975622722CA240085618C /* News.xcdatamodeld in Sources */,
 				CF8F0BBC2724CB5E00D7BCC0 /* FavouriteViewController.swift in Sources */,
 				CF09756F2722E5A00085618C /* News.swift in Sources */,
 				CF6317C52724622200AEBD49 /* ArticleTableViewCell.swift in Sources */,
@@ -339,7 +339,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7ZR6YQA8DL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NewsForPecode/Info.plist;
+				INFOPLIST_FILE = News/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -351,7 +351,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.overtrip.NewsForPecode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.overtrip.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -368,7 +368,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7ZR6YQA8DL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NewsForPecode/Info.plist;
+				INFOPLIST_FILE = News/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -380,7 +380,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.overtrip.NewsForPecode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.overtrip.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -391,7 +391,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CF09754F2722CA240085618C /* Build configuration list for PBXProject "NewsForPecode" */ = {
+		CF09754F2722CA240085618C /* Build configuration list for PBXProject "News" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF0975692722CA270085618C /* Debug */,
@@ -400,7 +400,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF09756B2722CA270085618C /* Build configuration list for PBXNativeTarget "NewsForPecode" */ = {
+		CF09756B2722CA270085618C /* Build configuration list for PBXNativeTarget "News" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CF09756C2722CA270085618C /* Debug */,
@@ -412,13 +412,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CF0975602722CA240085618C /* NewsForPecode.xcdatamodeld */ = {
+		CF0975602722CA240085618C /* News.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				CF0975612722CA240085618C /* NewsForPecode.xcdatamodel */,
 			);
 			currentVersion = CF0975612722CA240085618C /* NewsForPecode.xcdatamodel */;
-			path = NewsForPecode.xcdatamodeld;
+			path = News.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

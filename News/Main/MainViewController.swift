@@ -1,6 +1,6 @@
 //
 //  MainViewController.swift
-//  NewsForPecode
+//  News
 //
 //  Created by Wuz Good on 22.10.2021.
 //

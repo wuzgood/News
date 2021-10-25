@@ -1,6 +1,6 @@
 //
 //  DetailViewController.swift
-//  NewsForPecode
+//  News
 //
 //  Created by Wuz Good on 23.10.2021.
 //

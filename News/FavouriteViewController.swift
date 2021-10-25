@@ -1,6 +1,6 @@
 //
 //  FavouriteViewController.swift
-//  NewsForPecode
+//  News
 //
 //  Created by Wuz Good on 24.10.2021.
 //
