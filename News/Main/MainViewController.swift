@@ -70,7 +70,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 
                 if error != nil {
                     print(error.debugDescription)
-                    print("🛑")
                     return
                 } else if data != nil {
                     do {
