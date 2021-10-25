@@ -36,3 +36,9 @@ struct Source: Codable {
     let id: String?
     let name: String?
 }
+
+struct NewsError: Codable {
+    let status: String
+    let code: String?
+    let message: String?
+}

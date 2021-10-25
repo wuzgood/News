@@ -90,7 +90,6 @@ class FavouriteViewController: UIViewController, UITableViewDelegate, UITableVie
             completion(true)
         }
         action.image = UIImage(systemName: "trash")
-//        action.backgroundColor = .systemRed
         return UISwipeActionsConfiguration(actions: [action])
     }
     

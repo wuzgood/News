@@ -58,6 +58,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let urlString = API.URL + params + API.key
         guard let url = URL(string: urlString) else { return }
         
+        
         let request = URLRequest(url: url)
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
@@ -69,28 +70,28 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 
                 if error != nil {
                     print(error.debugDescription)
+                    print("🛑")
                     return
                 } else if data != nil {
                     do {
                         let newData = try JSONDecoder().decode(News.self, from: data!)
-                        print("refresh")
                         self.news = newData
                         self.articles.append(contentsOf: self.news!.articles)
                         self.tableView.reloadData()
                     }
                     catch {
                         print(error.localizedDescription)
+                        self.showError(error.localizedDescription)
                     }
                 }
-                
             }
         }
         task.resume()
     }
     
     
-    func showError() {
-        let ac = UIAlertController(title: "Loading error", message: "There was a problem loading the feed, please check your connection and try again.", preferredStyle: .alert)
+    func showError(_ error: String) {
+        let ac = UIAlertController(title: "Помилка завантаження новин", message: "На жаль, виникла проблема із завантаженням новин, перевірте підключення до інтернету та повторіть спробу пізніше.\n\n \(error)", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
     }
@@ -166,7 +167,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let article = NSManagedObject(entity: entity, insertInto: managedContext)
         
-        
         article.setValue(item.title, forKeyPath: "title")
         article.setValue(item.description, forKeyPath: "articleDescription")
         article.setValue(item.author, forKeyPath: "author")
@@ -175,9 +175,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         article.setValue(item.source.name, forKeyPath: "sourceName")
         article.setValue(item.publishedAt, forKeyPath: "publishedAt")
 
-        
-
-        
         do {
             try managedContext.save()
             let vc = FavouriteViewController()
